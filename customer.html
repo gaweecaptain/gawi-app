@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>고객관리</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top-header">
+  <div class="logo">👤 고객관리</div>
+</header>
+
+<nav class="tabs">
+  <button onclick="location.href='index.html'">다이어리</button>
+  <button class="active">고객관리</button>
+</nav>
+
+<section class="card">
+  <input class="search" placeholder="고객명 / 매장명 / 전화번호 검색">
+</section>
+
+<section class="card">
+  <h2>신규 고객 등록</h2>
+
+  <input placeholder="고객명">
+  <input placeholder="전화번호">
+  <input placeholder="매장명">
+
+  <textarea placeholder="고객 메모"></textarea>
+
+  <button class="save-btn">저장하기</button>
+</section>
+
+<section class="card">
+  <h2>저장된 고객</h2>
+
+  <div class="customer-item">
+    <div>
+      <strong>김원장</strong>
+      <p>준오헤어</p>
+    </div>
+  </div>
+
+  <div class="customer-item">
+    <div>
+      <strong>박원장</strong>
+      <p>에이블샵</p>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>
