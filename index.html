@@ -1,61 +1,6 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>가위캡틴 CRM</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header class="header">
-<div class="title">✂️ 가위캡틴 CRM</div>
-<div class="top-buttons">
-<button class="active">다이어리</button>
-<button onclick="location.href='customers.html'">고객관리</button>
-</div>
-<div class="month-bar">
-<button>◀</button>
-<h2>2026년 5월</h2>
-<button>▶</button>
-</div>
-</header>
-
-<section class="calendar">
-<div class="week">
-<div>일</div><div>월</div><div>화</div><div>수</div><div>목</div><div>금</div><div>토</div>
-</div>
-
-<div class="days">
-<div class="day"></div>
-<div class="day"></div>
-<div class="day"><span>1</span><small>AS방문</small></div>
-<div class="day"><span>2</span><small>준오헤어</small></div>
-<div class="day today"><span>3</span><small>결제확인</small></div>
-<div class="day"><span>4</span></div>
-<div class="day"><span>5</span></div>
-<div class="day"><span>6</span></div>
-<div class="day"><span>7</span></div>
-<div class="day"><span>8</span></div>
-<div class="day"><span>9</span></div>
-</div>
-</section>
-
-<section class="card">
-<h3>📌 오늘 해야 할 일</h3>
-<div class="todo purple"><strong>준오헤어 강남점</strong><p>10:30 방문</p></div>
-<div class="todo blue"><strong>AS 픽업</strong><p>14:00 청담헤어</p></div>
-<div class="todo orange"><strong>결제 확인</strong><p>17:00 에이블샵</p></div>
-</section>
-
-<section class="card">
-<h3>🎯 오늘 의무 방문 고객 5명</h3>
-
-<div class="customer"><div><strong>청담헤어</strong><p>010-2222-3333</p></div><input type="checkbox"></div>
-<div class="customer"><div><strong>에이블샵</strong><p>010-4444-5555</p></div><input type="checkbox"></div>
-<div class="customer"><div><strong>박원장</strong><p>010-6666-7777</p></div><input type="checkbox"></div>
-<div class="customer"><div><strong>제이살롱</strong><p>010-8888-9999</p></div><input type="checkbox"></div>
-<div class="customer"><div><strong>준오헤어</strong><p>010-1111-2222</p></div><input type="checkbox"></div>
-
-</section>
-</body>
-</html>
+<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>가위캡틴 CRM</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="header"><h1>✂️ 가위캡틴 CRM</h1><div class="tabs"><button class="active">다이어리</button><button onclick="location.href='customers.html'">고객관리</button></div></header>
+<section class="calendar-box"><div class="calendar-top"><button>◀</button><h2 id="monthTitle"></h2><button>▶</button></div><div class="weekdays"><div>일</div><div>월</div><div>화</div><div>수</div><div>목</div><div>금</div><div>토</div></div><div id="calendarDays" class="days"></div></section>
+<section class="card"><h3>📌 오늘 해야 할 일</h3><div class="todo purple">준오헤어 강남점 방문</div><div class="todo blue">AS 픽업</div><div class="todo orange">결제 확인</div><div class="add-area"><input id="todoInput" placeholder="새 일정 입력"><button onclick="addTodo()">추가</button></div><div id="todoList"></div></section>
+<section class="card"><h3>🎯 오늘 방문 고객 5명</h3><div id="visitList"></div></section>
+<script src="script.js"></script></body></html>
